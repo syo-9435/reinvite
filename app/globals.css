@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFCFE;
+  --foreground: #1E0A1E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* ── Idol カラーパレット ── */
+  --color-idol-50:  #FFF0F6;
+  --color-idol-100: #FFD6E8;
+  --color-idol-200: #FFB3D0;
+  --color-idol-300: #FF8EBB;
+  --color-idol-400: #FF6B9D;
+  --color-idol-500: #FF6B9D;
+  --color-idol-600: #E8508A;
+  --color-idol-700: #C43070;
+
+  /* ── Purple アクセント ── */
+  --color-purple-100: #E9D5FF;
+  --color-purple-300: #D8B4FE;
+  --color-purple-400: #C084FC;
+  --color-purple-500: #A855F7;
+
+  /* ── Semantic ── */
+  --color-pink-pale: #FFF0F6;
+  --color-gray-base: #F3EEF4;
+  --color-dark:      #1E0A1E;
+  --color-muted:     #8B7A8E;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Noto Sans JP", Arial, Helvetica, sans-serif;
+}
